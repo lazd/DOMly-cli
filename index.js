@@ -20,12 +20,16 @@ program
 program.noFrags = !program.frags;
 
 program.args.forEach(function(filepath) {
-  console.log(domly.precompile(fs.readFileSync(filepath).toString(), {
+  var result = domly.precompile(fs.readFileSync(filepath).toString(), {
     debug: program.debug,
     stripWhitespace: program.stripWhitespace,
     noFrags: program.noFrags,
     appendClassNames: program.appendClassNames,
     preserveHandleAttr: program.preserveHandleAttr,
     preserveComments: program.preserveComments
-  }));
+  });
+
+  if (!program.debug) {
+    console.log(result);
+  }
 });
