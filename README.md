@@ -1,2 +1,2 @@
-DOMly-playground
-================
+# DOMly-cli
+> DOMly command line tools
