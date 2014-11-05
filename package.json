@@ -16,6 +16,6 @@
   "homepage": "https://github.com/lazd/DOMly-cli",
   "dependencies": {
     "commander": "^2.5.0",
-    "domly": "git+https://git@github.com/lazd/domly.git"
+    "domly": "^0.0.6"
   }
 }
